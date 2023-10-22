@@ -1,0 +1,17 @@
+
+############################# Deutsch ############################
+[de]
+languageName = "De"
+title = "sensAI – zerstörungsfreie Materialcharakterisierung"
+contentDir = "content/deutsch" # content/german
+weight = 1
+
+
+############################# English ############################
+[en]
+languageName = "En"
+title = "sensAI – non-destructive material characterization"
+contentDir = "content/english" # content/english
+weight = 2
+
+

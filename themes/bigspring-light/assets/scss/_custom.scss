@@ -1,0 +1,60 @@
+// This file is empty within the template
+// You can use it to override CSS from within your project
+.myicon {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  // color: $primary-color;
+  display: inline-block;
+  background-color: $primary-color;
+}
+.blobscss {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="' + $primary-color + '" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>');
+}
+.blobs {
+  background-image: url('data:image/svg+xml;charset=UTF-8, <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.195312,0,0,0.195312,0,0)">
+ <path d="M120.72,89.856C153.315,89.856 179.777,120.665 179.777,158.614C179.777,196.563 153.315,227.373 120.72,227.373C88.126,227.373 61.664,196.563 61.664,158.614C61.664,120.665 88.126,89.856 120.72,89.856ZM379.847,89.794C438.815,89.794 486.689,134.189 486.689,188.871C486.689,243.552 438.815,287.947 379.847,287.947C320.879,287.947 273.004,243.552 273.004,188.871C273.004,134.189 320.879,89.794 379.847,89.794ZM186.691,361.305C221.971,361.305 250.614,378.362 250.614,399.372C250.614,420.382 221.971,437.439 186.691,437.439C151.41,437.439 122.767,420.382 122.767,399.372C122.767,378.362 151.41,361.305 186.691,361.305Z" style="fill:#{$primary-color};"/>
+    </g>
+</svg>');
+}
+.non-contact {
+  mask-image: url("/icons/non-contact.svg");
+  -webkit-mask-image: url("/icons/non-contact.svg");
+}
+.microchip-ai {
+  mask-image: url("/icons/microchip-ai.svg");
+  -webkit-mask-image: url("/icons/microchip-ai.svg");
+}
+.non-contact-legacy {
+  background-image: url('data:image/svg+xml;charset=UTF-8, 
+  <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M11.602,30.338L28.003,4.572L35.403,6.763L19.066,32.752L11.602,30.338Z" style="fill:#{rgba($primary-color,0.999)};"/>
+    <path d="M25.337,28.561L38.476,7.88L78.654,19.576L65.223,40.562L25.337,28.561ZM59.031,20.777L62.232,21.813L63.017,20.747L62.629,18.852L57.026,17.094L55.899,18.261L56.382,19.902L59.031,20.777ZM50.654,18.137L52.648,18.677L53.779,17.777L53.323,15.966L39.508,11.908L38.235,12.891L38.76,14.619L40.053,15.2L50.654,18.137Z" style="fill:#{rgba($primary-color,0.999)};"/>
+    <path d="M23.755,31.22L21.012,34.835L20.562,41.881L19.427,48.94L16.767,53.976L13.654,59.189L11.54,63.59L9.543,68.484L21.554,71.586L22.224,67.22L23.486,59.83L24.894,53.98L26.816,47.884L28.812,43.644L31.518,38.995L35.445,34.652L23.755,31.22Z" style="fill:#{rgba($primary-color,0.999)};"/>
+    <path d="M38.837,35.789L35.438,39.067L32.316,43.719L29.313,50.399L27.33,57.024L25.495,63.474L24.904,69.422L24.307,73.283L23.727,75.222L21.687,75.12L7.763,71.02L6.798,74.632L7.288,77.298L8.858,78.836L28.851,85.078L30.99,85.2L31.492,82.984L31.722,77.263L32.127,70.948L33.331,64.42L35.011,58.663L36.743,53.51L39.854,47.334L43.338,42.784L48.576,38.444L38.837,35.789Z" style="fill:#{rgba($primary-color,0.999)};"/>
+    <path d="M42.524,48.833L45.028,45.228L48.7,42.068L48.592,48.893L42.524,48.833Z" style="fill:#{rgba($primary-color,0.999)};"/>
+    <path d="M75.81,41.61L78.073,39.619L79.493,36.65L80.047,33.107L79.175,29.849L79.216,27.856L81.196,27.407L83.235,28.553L84.127,32.048L84.117,35.513L83.176,39.3L81.334,42.675L78.381,45.108L76.571,45.64L75.145,43.71L75.81,41.61Z" style="fill:#{rgba($primary-color,0.999)};"/>
+    <path d="M79.904,52.853L79.134,51.089L80.424,49.588L83.486,47.912L85.837,44.385L87.673,40.508L89.293,35.93L89.123,32.127L88.611,28.048L87.379,25.15L87.309,23.131L89.118,22.908L91.067,23.559L92.823,27.748L93.578,31.799L93.423,37.005L92.182,41.63L91.151,44.331L89.387,47.244L87.057,49.992L84.998,52.065L82.193,53.78L79.904,52.853Z" style="fill:#{rgba($primary-color,0.999)};"/>
+</svg> 
+');
+}
+
+.img-profile {
+  max-width: 250px;
+  box-shadow: 2px 3px 10px;
+  margin: 20px 0px;
+}
+
+body .only-dark {
+  display: none;
+}
+body .only-light {
+  display: initial;
+}
+body.dark .only-light {
+  display: none;
+}
+body.dark .only-dark {
+  display: initial;
+}

@@ -1,0 +1,11 @@
+
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = true
+
+[params.variables]
+primary_color = "#4177B4"
+secondary_color = "#001111"
+light = "#e5ecf3"
+primary_color_dark = "#5ea0ed"
+text_color_dark_mode = "#fff"
+background_color_dark = "#1E262C"

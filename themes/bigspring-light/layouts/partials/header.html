@@ -1,0 +1,143 @@
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="navigation">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
+        {{ with site.Params.logo}}
+        <img
+          width="{{site.Params.logo_width}}"
+          class="img-fluid only-light"
+          src="{{ . | relURL }}"
+          alt="{{ site.Title }}"
+        />
+        {{ else }}{{site.Title}}{{end}} {{ with site.Params.logo_dark}}
+        <img
+          width="{{site.Params.logo_width}}"
+          class="img-fluid only-dark"
+          src="{{ . | relURL }}"
+          alt="{{ site.Title }}"
+        />
+        {{ else }}{{site.Title}}{{end}}
+      </a>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navigation"
+        aria-label="menu"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          {{ range site.Menus.main }} {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+            >
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu">
+              {{ range .Children }}
+              <a
+                class="dropdown-item"
+                href="{{ .URL | relLangURL }}"
+                title="{{ .Name }}"
+                >{{ .Name }}</a
+              >
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="{{ .URL | relLangURL }}"
+              title="{{ .Name }}"
+              >{{ .Name }}</a
+            >
+          </li>
+          {{ end }} {{ end }}
+
+          <!-- Language List -->
+          {{ if .IsTranslated }}
+          <select
+            class="m-2 border-0"
+            id="select-language"
+            onchange="location = this.value;"
+          >
+            {{ $siteLanguages := site.Languages}} {{ $pageLang := .Page.Lang}}
+            {{ range .Page.AllTranslations }} {{ $translation := .}} {{ range
+            $siteLanguages }} {{ if eq $translation.Lang .Lang }} {{ $selected
+            := false }} {{ if eq $pageLang .Lang}}
+            <option
+              id="{{ $translation.Language }}"
+              value="{{ $translation.Permalink }}"
+              selected
+            >
+              {{ .LanguageName }}
+            </option>
+            {{ else }}
+            <option
+              id="{{ $translation.Language }}"
+              value="{{ $translation.Permalink }}"
+            >
+              {{ .LanguageName }}
+            </option>
+            {{ end }} {{ end }} {{ end }} {{ end }}
+          </select>
+          {{ end }}
+        </ul>
+
+        {{ if site.Params.navigation_button.enable }} {{ with
+        site.Params.navigation_button }}
+        <a
+          href="{{ .link | relLangURL }}"
+          title="{{ .label }}"
+          class="btn btn-sm btn-primary ml-3"
+          >{{ .label }}</a
+        >
+        {{ end }} {{ end }}
+        <div class="theme-switcher d-none d-lg-inline-block">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 15 15"
+            width="20"
+            height="20"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+            stroke="#000"
+          >
+            <mask id="m">
+              <circle
+                class="masker"
+                cx="7.5"
+                cy="7.5"
+                r="8.5"
+                fill="#fff"
+              ></circle>
+            </mask>
+            <g mask="url(#m)">
+              <path
+                class="sun"
+                d="M7.5 1.5v-1m0 13.99v-.998m6-5.997h1m-13 0h-1m2-4.996l-1-1m12 0l-1 1m-10 9.993l-1 1m12 0l-1-1m-2-4.997a2.999 2.999 0 01-3 2.998 2.999 2.999 0 113-2.998z"
+              ></path>
+            </g>
+            <path
+              class="moon"
+              fill="white"
+              d="M1.66 11.362A6.5 6.5 0 007.693.502a7 7 0 11-6.031 10.86z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}

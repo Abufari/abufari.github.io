@@ -1,0 +1,53 @@
+#################### default parameters ################################
+favicon = "images/favicon.png"
+logo = "images/logo.png"
+logo_dark = "images/logo_dark.png"
+logo_width = "150px"
+# OpenGraph / Twitter Card metadata
+description = "sensAI ist ein Start-up zur Revolutionierung der Materialcharakterisierung"
+author = "Florian Linscheid"
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+
+# Type of pages to be rendered with a blog view
+blogCategoryType = "category"
+
+# Preloader
+[preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation buttons
+[navigation_button]
+enable = true
+label = "Kontakt"
+link = "mailto:florian.linscheid@uni-a.de"
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+  
+############################# social site ########################
+# [[social]]
+# title = "facebook"
+# icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
+# link = "#"
+#
+# [[social]]
+# title = "twitter"
+# icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
+# link = "#"
+#
+# [[social]]
+# title = "skype"
+# icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
+# link = "#"
+#
+# [[social]]
+# title = "linkedin"
+# icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
+# link = "https://www.linkedin.com/in/linscheid-florian"

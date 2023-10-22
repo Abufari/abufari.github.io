@@ -1,0 +1,78 @@
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Vorteile"
+url = "#vorteile"
+weight = 2
+hasChildren = true
+
+  # [[main]]
+  # parent = "Produkt"
+  # name = "Wie es funktioniert"
+  # url = "how-it-works/"
+  # weight = 1
+  #
+  # [[main]]
+  # parent = "Produkt"
+  # name = "Technologie"
+  # url = "technology/"
+  # weight = 2
+
+[[main]]
+name = "Über Uns"
+url = "#team"
+weight = 3
+
+[[main]]
+name = "Kontakt"
+url = "#contact"
+weight = 4
+
+# [[main]]
+# name = "FAQ"
+# url = "faq/"
+# weight = 5
+
+# footer menu left
+# [[footer_left]]
+# name = "About Us"
+# url = "#"
+#
+# [[footer_left]]
+# name = "Quick Start"
+# url = "#"
+#
+# [[footer_left]]
+# name = "Pricing"
+# url = "pricing/"
+
+
+# footer menu middle
+# [[footer_middle]]
+# name = "Pricing"
+# url = "pricing/"
+#
+# [[footer_middle]]
+# name = "Platform"
+# url = "#"
+#
+# [[footer_middle]]
+# name = "Features"
+# url = "#"
+
+# footer menu right
+[[footer_right]]
+name = "Datenschutz"
+url = "privacy-policy/"
+
+[[footer_right]]
+name = "Impressum"
+url = "impressum/"
+
+# [[footer_right]]
+# name = "FAQ"
+# url = "faq/"
