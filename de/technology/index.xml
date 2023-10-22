@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technologie on sensAI – zerstörungsfreie Materialcharakterisierung</title>
-    <link>https://192.168.0.214/de/technology/</link>
+    <link>https://abufari.github.io/de/technology/</link>
     <description>Recent content in Technologie on sensAI – zerstörungsfreie Materialcharakterisierung</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de</language><atom:link href="https://192.168.0.214/de/technology/index.xml" rel="self" type="application/rss+xml" />
+    <language>de</language><atom:link href="https://abufari.github.io/de/technology/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

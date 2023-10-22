@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frequently Asked Questions on sensAI – non-destructive material characterization</title>
-    <link>https://192.168.0.214/en/faq/</link>
+    <link>https://abufari.github.io/en/faq/</link>
     <description>Recent content in Frequently Asked Questions on sensAI – non-destructive material characterization</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://192.168.0.214/en/faq/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://abufari.github.io/en/faq/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
